@@ -1,0 +1,86 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - morning
+    - hey there
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+
+- intent: basic_info
+  examples: |
+    - about covid19
+    - About covid 19
+    - What is covid-19
+    - What is covid 19
+    - what is covid19
+    - what is covid 19
+    - what is corona virus
+    - About corona virus
+    - What is COVID-19
+
+- intent: symptoms
+  examples: |
+    - symptoms of covid 19
+    - syms
+    - Symptoms of corona virus
+    
+- intent: age_risk
+  examples: |
+    - who is at most risk
+    - what age peoples are more at risk
+    
+- intent: time
+  examples: |
+    - how long it takes to develope symptoms
+    - time to see effect of corona virus
+    
+    
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

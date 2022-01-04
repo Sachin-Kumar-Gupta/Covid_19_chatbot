@@ -1,0 +1,35 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_goodbye
+  
+- story: covid info
+  steps:
+  - intent: basic_info
+  - action: utter_basic_info
+  - intent: symptoms
+  - action: utter_symptoms
+  
+- story: covid info 2
+  steps:
+  - intent: age_risk
+  - action: utter_age_risk
+  - intent: time
+  - action: utter_time
