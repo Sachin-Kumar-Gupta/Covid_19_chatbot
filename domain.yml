@@ -1,0 +1,56 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - basic_info
+  - bot_challenge
+  - age_risk
+  - time
+  - symptoms
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_goodbye:
+  - text: "Thanks for using bot"
+  
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_basic_info:
+  - text: "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.\n\nWHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China."
+
+  utter_age_risk:
+  - text: "People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.\n\nHowever, anyone can get sick with COVID-19 and become seriously ill or die at any age."
+    
+  utter_time:
+  - text: "The time from exposure to COVID-19 to the moment when symptoms begin is,\n\non average, 5-6 days and can range from 1-14 days.\n\nThis is why people who have been exposed to the virus are advised to remain \n\nat home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available."
+    
+  utter_symptoms:
+  - text: |
+     The most common symptoms of COVID-19 are
+
+     1. Fever
+     2. Dry cough
+     3. Fatigue
+     Other symptoms that are less common and may affect some patients include
+
+     1. Loss of taste or smell,
+     2. Nasal congestion,
+     3. Conjunctivitis (also known as red eyes)
+     4. Sore throat,
+     5. Headache,
+     6. Muscle or joint pain,
+     7. Different types of skin rash,
+     8. Nausea or vomiting,
+     9. Diarrhea,
+     10. Chills or dizziness.
+    
+       
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
