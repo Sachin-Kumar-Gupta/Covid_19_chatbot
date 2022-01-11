@@ -6,10 +6,22 @@ intents:
   - affirm
   - deny
   - basic_info
+  - state_wise
   - bot_challenge
   - age_risk
   - time
   - symptoms
+  - state_wise_doses
+  
+actions:
+  - action_corona_cases
+  - utter_basic_info
+  - utter_symptoms
+  - action_vaccine_done
+  
+entities:
+  - state
+  - dose
 
 responses:
   utter_greet:
