@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-dose",
+      "2": "I-dose",
+      "3": "L-dose",
+      "4": "U-dose",
+      "5": "B-state",
+      "6": "I-state",
+      "7": "L-state",
+      "8": "U-state",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-dose": 1,
+      "I-dose": 2,
+      "L-dose": 3,
+      "U-dose": 4,
+      "B-state": 5,
+      "I-state": 6,
+      "L-state": 7,
+      "U-state": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

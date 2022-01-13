@@ -12,12 +12,32 @@ intents:
   - time
   - symptoms
   - state_wise_doses
-  
+  - children_mask_info
+  - 5year_or_less_age_children_mask_condition
+  - children_disabilities  
+  - children_health_condition
+  - children_mask_type
+  - children_mask_how_to_wear
+  - children_mask_at_home
+  - children_teacher_mask
+  - children_mask_when_playing
+  - children_mask_alternative
+
 actions:
   - action_corona_cases
   - utter_basic_info
   - utter_symptoms
   - action_vaccine_done
+  - utter_children_mask_condition
+  - utter_5year_or_less_age_children_mask_condition
+  - utter_children_disabilities
+  - utter_children_health_condition
+  - utter_children_mask_type
+  - utter_children_mask_how_to_wear
+  - utter_children_mask_at_home
+  - utter_children_teacher_mask
+  - utter_children_mask_when_playing
+  - utter_children_mask_alternative
   
 entities:
   - state
@@ -61,8 +81,61 @@ responses:
      8. Nausea or vomiting,
      9. Diarrhea,
      10. Chills or dizziness.
-    
-       
+
+  utter_children_mask_condition:
+  - text: |
+      Children aged 5 years and under should not be required to wear masks. This is based on the safety and overall interest of the child and the capacity to appropriately use a mask with minimal assistance.
+
+      WHO and UNICEF advise that the decision to use masks for children aged 6-11 should be based on the following factors:
+      
+      1. Whether there is widespread transmission in the area where the child resides
+      2. The ability of the child to safely and appropriately use a mask
+      3. Access to masks, as well as laundering and replacement of masks in certain settings (such as schools and childcare services)
+      4. Adequate adult supervision and instructions to the child on how to put on, take off and safely wear masks
+      5. Potential impact of wearing a mask on learning and psychosocial development, in consultation with teachers, parents/caregivers and/or medical providers
+      6. Specific settings and interactions the child has with other people who are at high risk of developing serious illness, such as the elderly and those with other underlying health conditions
+
+      WHO and UNICEF advise that children aged 12 and over should wear a mask under the same conditions as adults, in particular when they cannot guarantee at least a 1-metre distance from others and there is widespread transmission in the area.
+
+  utter_5year_or_less_age_children_mask_condition:
+  - text:
+     "In general, children aged 5 years and under should not be required to wear masks. \n\nThis advice is based on the safety and overall interest of the child and the capacity to appropriately use a mask with minimal assistance.\n\n There may be local requirements for children aged 5 years and under to wear masks, or specific needs in some settings, such as being physically close to someone who is ill. \n\nIn these circumstances, if the child wears a mask, a parent or other guardian should be within direct line of sight to supervise the safe use of the mask."
+  
+  utter_children_disabilities:
+  - text:
+     "The use of masks for children of any age with developmental disorders, disabilities or other specific health conditions should not be mandatory and be assessed on a case by case basis by the child’s parent, guardian, educator and/or medical provider. In any case, children with severe cognitive or respiratory impairments with difficulties tolerating a mask should not be required to wear masks."
+
+  utter_children_health_condition:
+  - text: |
+     "Children with underlying health conditions such as cystic fibrosis or cancer should wear a medical mask in consultation with their medical providers. A medical mask provides protection to the person wearing the mask and prevents transmission to others. It is recommended for anyone who has underlying health conditions that put them at greater risk of serious illness."
+  
+  utter_children_mask_type:
+  - text:
+      "Children who are in general good health can wear a non-medical or fabric mask. This provides source control, meaning it keeps the virus from being transmitted to others if they are infected and are not aware that they are infected. The adult who is providing the mask should ensure the fabric mask is the correct size and sufficiently covers the nose, mouth and chin of the child. \n\nChildren with underlying health conditions such as cystic fibrosis, cancer or immunosuppression, should, in consultation with their medical providers, wear a medical mask. A medical mask controls spreading of the virus and protection to the wearer, and is recommended for anyone who is at higher risk of getting seriously ill from COVID-19."
+
+  utter_children_mask_how_to_wear:
+  - text: |
+     "Children should follow the same principles as adults for wearing masks. This includes cleaning hands at least 20 seconds if using an alcohol-based hand rub, or at least 40 seconds if using soap and water, before putting on the mask. Make sure the mask is the right size to cover the nose, mouth and chin.  Children should be taught how to wear the mask properly, including not touching the front of the mask and not pulling it under the chin or into their mouth. They should store the mask in a bag or container, and not share the mask with others."
+  
+  utter_children_mask_at_home:
+  - text:
+     "Any child who has symptoms suggestive of COVID-19 should wear a medical mask, as long as they can tolerate it. The child should be isolated, and medical advice sought as soon as they start to feel unwell, even if symptoms are mild. Family members/caregivers who come within 1 metre of the sick child at home should also wear a mask. \n\nA household member who is sick or has tested positive with the virus that causes COVID-19 should be isolated from everyone else if possible. If the child comes within 1 metre of the sick person at home, the adult and child should wear a medical mask during that time."
+  
+  utter_children_teacher_mask:
+  - text:
+     "In areas where there is widespread transmission, all adults under the age of 60 and who are in general good health should wear fabric masks when they cannot guarantee at least a 1-metre distance from others. This is particularly important for adults working with children who may have close contact with children and one another. \n\nAdults aged 60 or over, or who have any underlying health conditions such as heart disease, diabetes or lung cancer, should wear a medical mask because of their higher risk of getting seriously ill from COVID-19."
+  
+  utter_children_mask_when_playing:
+  - text:
+     "Children should not wear a mask when playing sports or doing physical activities, such as running, jumping or playing on the playground, so that it doesn’t compromise their breathing. When organizing these activities for children, it is important to encourage all other critical public health measures: maintaining at least a 1-metre distance from others, limiting the number of children playing together, providing access to hand hygiene facilities and encouraging their use."
+  
+  utter_children_mask_alternative:
+  - text:
+     "In the context of COVID-19, some children may not be able to wear a mask due to disabilities or specific situations such as speech classes where the teacher needs to see their mouths. In these cases, face shields may be considered an alternative to masks, but they do not provide the equivalent protection in keeping the virus from being transmitted to others. \n\nIf a decision is made to use a face shield, it should cover the entire face, wrap around the sides of the face and extend to below the chin. Caution should be taken while wearing one to avoid injuries that could break it and harm the eyes or face."
+  
+  
+
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

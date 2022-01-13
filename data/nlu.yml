@@ -95,6 +95,74 @@ nlu:
     - [Uttar Pradesh](dose)
     - [Delhi](dose)
 
+- intent: children_mask_info
+  examples: |
+    - Should children wear a mask?
+    - Children aged 5 years and under should be required to wear masks?
+    - what minimum age should required to wear mask?
+    - what are the factors for deciding to use mask for children age 6-11?
+    
+- intent: 5year_or_less_age_children_mask_condition
+  examples: |
+    - Are there situations where children aged 5 years and under may wear mask? 
+    - children aged 5 years and under may required to wear a mask?
+    - What are the guidlines for age 5 year and less than 5 year kids?
+    - what are those precations have to take for 5 year old and less than 5 year old child?
+
+- intent: children_disabilities
+  examples: |
+    - Should children with developmental disabilities wear masks?
+    - wearing mask for long time does may develop disability in kids?
+    - does it good for wearing mask for children?
+    - what are side effect for wearing mask to kid? 
+
+- intent: children_health_condition
+  examples: |
+    - Should children who have health issues or a medical condition that compromises their immune system wear a mask?
+    - it is compulsary for sick kid to wear a mask?
+    - if children have health issue should she/he has to wear mask?
+    - wearing mask could affects the already sick kid? 
+
+- intent: children_mask_type
+  examples: |
+    - What type of mask should children wear?
+    - Children who are in general good health can he/she wear a non-medical or fabric mask?
+    - what are the guidlined to wear mask for children?
+
+- intent: children_mask_how_to_wear
+  examples: |
+    - How should children wear a mask?
+    - what are the seafty guidline while wearing maks by kid?
+    - type of mask required to wear by kid/children?
+    - what are the princilples need to followed by the children/kids?
+
+- intent: children_mask_at_home
+  examples: |
+    - Should a child wear a mask at home?
+    - children having covid-19 symptoms should he or she need to wear mask at home?
+    - what should have to take precautions at home if kid having symptoms?
+    - if anyone have covid-19 symptoms then does it required to wear mask for our child?
+    - If kid or any other adult have covid-19 symptoms how much distance should we have to take?
+
+- intent: children_teacher_mask
+  examples: |    
+    - Should teachers or other adults working with children wear a mask?
+    - how much distance should have to take from children?
+    - Should childrens needs to wear mask in from of teacher and classrom?
+    - is this important for adults working with children who may have close contact with children and one another what are those guidelines to follow?
+
+- intent: children_mask_when_playing
+  examples: |
+    - Should children wear a mask when playing sports or doing physical activities?
+    - should children go out from home for playing?
+    - 
+- intent: children_mask_alternative
+  examples: |
+    - Are there alternatives to fabric masks such as face shields?
+    - what are those other ways to cover children face or mouth and nose?
+    - what are those specific guidelines needs to follows for cover or alternative of mask?
+    - for alternative of mask what caution should be taken while wearing alternative for mask? 
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

@@ -41,4 +41,35 @@ stories:
   - action: action_corona_cases
   - intent: state_wise_doses
   - action: action_vaccine_done
+
+- story: children's_cautions 
+  steps: 
+  - intent: children_mask_info
+  - action: utter_children_mask_condition
+
+  - intent: 5year_or_less_age_children_mask_condition
+  - action: utter_5year_or_less_age_children_mask_condition
+
+  - intent: children_disabilities
+  - action: utter_children_disabilities
+
+  - intent: children_health_condition
+  - action: utter_children_health_condition
+
+  - intent: children_mask_type
+  - action: utter_children_mask_type
   
+  - intent: children_mask_how_to_wear
+  - action: utter_children_mask_how_to_wear
+  
+  - intent: children_mask_at_home
+  - action: utter_children_mask_at_home
+  
+  - intent: children_teacher_mask
+  - action: utter_children_teacher_mask
+  
+  - intent: children_mask_when_playing
+  - action: utter_children_mask_when_playing
+  
+  - intent: children_mask_alternative
+  - action: utter_children_mask_alternative
