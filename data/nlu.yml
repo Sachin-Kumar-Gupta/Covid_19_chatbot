@@ -163,6 +163,68 @@ nlu:
     - what are those specific guidelines needs to follows for cover or alternative of mask?
     - for alternative of mask what caution should be taken while wearing alternative for mask? 
 
+- intent: infect_by_freshfoods
+  examples: |
+    - Can I get COVID-19 from eating fresh foods, like fruits and vegetables?
+    - eating fresh foods, like fruits and vegetables are safe from getting catch by covid-19?
+    - vegetables and fruits are healthy diet in covid-19 situation?
+
+- intent: wash_freshfoods
+  examples: |
+    - How should I wash fruits and vegetables in the time of COVID-19?
+
+- intent: COVID-19_live_food_packaging_surface
+  examples: |
+    - Can the virus that causes COVID-19 live on the surface of food packaging?
+
+- intent: spread_thorugh_cooked_food_including_Nonvege
+  examples: |
+    - Can the virus that causes COVID-19 be transmitted through the consumption of cooked foods, including animal products?
+
+- intent: grocery_stores
+  examples: |
+    - Is it safe to go to grocery stores and other food markets?
+
+- intent: groceries_delivery
+  examples: |
+    - Is it safe to have groceries delivered?
+
+- intent: disinfectant_for_surfaces
+  examples: |
+    - What is the best household disinfectant for surfaces?
+
+- intent: best_food_for_immume
+  examples: |
+    - What foods should be consumed to support the immune system?
+
+- intent: micronutrient
+  examples: |
+    - Can micronutrient (vitamin and mineral) supplements prevent COVID-19 in healthy individuals or cure it in those with COVID-19 disease?
+
+- intent: vitamin_D
+  examples: |
+    - Are vitamin D supplements needed if individuals are not exposed to sunlight due to lockdowns?
+
+- intent: herbal_product
+  examples: |
+    - Are there any herbal teas or herbal supplements that may help prevent or cure COVID-19?
+
+- intent: probiotic_help
+  examples: |
+    - Can probiotics help prevent COVID-19?
+
+- intent: eating_ginger
+  examples: |
+    - Can eating ginger help prevent COVID-19?
+
+- intent: eating_garlic
+  examples: |
+    - Can eating garlic help prevent COVID-19?
+
+- intent: eating_pepper
+  examples: |
+    - Can adding pepper to your soup or other meals help prevent or cure COVID-19?
+
 - intent: bot_challenge
   examples: |
     - are you a bot?

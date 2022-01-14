@@ -42,7 +42,7 @@ stories:
   - intent: state_wise_doses
   - action: action_vaccine_done
 
-- story: children's_cautions 
+- story: children's cautions 
   steps: 
   - intent: children_mask_info
   - action: utter_children_mask_condition
@@ -73,3 +73,32 @@ stories:
   
   - intent: children_mask_alternative
   - action: utter_children_mask_alternative
+
+- story: Food safety and nutrition
+ steps: 
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+
+  - intent: 
+  - action:
+  
+  - intent: 
+  - action:

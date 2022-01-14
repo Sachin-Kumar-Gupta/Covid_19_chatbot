@@ -22,6 +22,24 @@ intents:
   - children_teacher_mask
   - children_mask_when_playing
   - children_mask_alternative
+  - infect_by_freshfoods
+  - wash_freshfoods
+  - COVID-19_live_food_packaging_surface
+  - spread_thorugh_cooked_food_including_Nonvege
+  - grocery_stores
+  - groceries_delivery
+  - disinfectant_for_surfaces
+  - best_food_for_immume
+  - micronutrient
+  - vitamin_D
+  - herbal_product
+  - probiotic_help
+  - eating_ginger
+  - eating_garlic
+  - eating_pepper
+
+
+
 
 actions:
   - action_corona_cases
@@ -38,6 +56,21 @@ actions:
   - utter_children_teacher_mask
   - utter_children_mask_when_playing
   - utter_children_mask_alternative
+  - utter_infect_by_freshfoods
+  - utter_wash_freshfoods
+  - utter_COVID-19_live_food_packaging_surface
+  - utter_spread_thorugh_cooked_food_including_Nonvege
+  - utter_grocery_stores
+  - utter_groceries_delivery
+  - utter_disinfectant_for_surfaces
+  - utter_best_food_for_immume
+  - utter_micronutrient
+  - utter_vitamin_D
+  - utter_herbal_product
+  - utter_probiotic_help
+  - utter_eating_ginger
+  - utter_eating_garlic
+  - utter_eating_pepper
   
 entities:
   - state
@@ -133,7 +166,36 @@ responses:
   - text:
      "In the context of COVID-19, some children may not be able to wear a mask due to disabilities or specific situations such as speech classes where the teacher needs to see their mouths. In these cases, face shields may be considered an alternative to masks, but they do not provide the equivalent protection in keeping the virus from being transmitted to others. \n\nIf a decision is made to use a face shield, it should cover the entire face, wrap around the sides of the face and extend to below the chin. Caution should be taken while wearing one to avoid injuries that could break it and harm the eyes or face."
   
-  
+  utter_infect_by_freshfoods:
+  - text:
+  utter_wash_freshfoods:
+  - text:
+  utter_COVID-19_live_food_packaging_surface:
+  - text:
+  utter_spread_thorugh_cooked_food_including_Nonvege:
+  - text:
+  utter_grocery_stores:
+  - text:
+  utter_groceries_delivery:
+  - text:
+  utter_disinfectant_for_surfaces:
+  - text:
+  utter_best_food_for_immume:
+  - text:
+  utter_micronutrient:
+  - text:
+  utter_vitamin_D:
+  - text:
+  utter_herbal_product:
+  - text:
+  utter_probiotic_help:
+  - text:
+  utter_eating_ginger:
+  - text:
+  utter_eating_garlic:
+  - text:
+  utter_eating_pepper:
+  - text:
 
 
 session_config:
