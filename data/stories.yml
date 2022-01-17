@@ -27,18 +27,100 @@ stories:
   - intent: symptoms
   - action: utter_symptoms
   
+- story: precaution and sanitizer
+  steps:
+  - intent: precautions
+  - action: utter_precautions
+  - intent: about_sanitizer
+  - action: utter_sanitizer
+  
+- story: spreading of covid
+  steps:
+  - intent: spread_air
+  - action: utter_spread_air
+  - intent: spreading_of_covid
+  - action: utter_spreading_of_covid
+
+  
 - story: covid info 2
   steps:
   - intent: age_risk
   - action: utter_age_risk
   - intent: time
   - action: utter_time
+  
+- story: about mask and vaccine
+  steps:
+  - intent: about_mask
+  - action: utter_about_mask
+  - intent: about_vaccine
+  - action: utter_about_vaccine
+
+
+- story: sanitizer and tratments
+  steps:
+  - intent: vitamins
+  - action: utter_vitamins
+  - intent: treatment_at_home
+  - action: utter_treatment_at_home
 
   
 - story: covid cases
   steps:
-  - intent: state_wise
+  - intent: state_wise_cases
   - action: action_corona_cases
   - intent: state_wise_doses
   - action: action_vaccine_done
+
+- story: children's_cautions 
+  steps: 
+  - intent: children_mask_info
+  - action: utter_children_mask_condition
+  - intent: 5year_or_less_age_children_mask_condition
+  - action: utter_5year_or_less_age_children_mask_condition
+
+- story: children health condition 
+  steps: 
+  - intent: children_health_condition
+  - action: utter_children_health_condition
+
+- story: about children mask 
+  steps: 
+  - intent: children_mask_type
+  - action: utter_children_mask_type
+  - intent: children_mask_alternative
+  - action: utter_children_mask_alternative
+
+- story: children mask 
+  steps: 
+  - intent: children_mask_at_home
+  - action: utter_children_mask_at_home
+  - intent: children_mask_when_playing
+  - action: utter_children_mask_when_playing
+
+
+- story: out_of_scope_story
+  steps:
+  - intent: out_of_scope
+  - action: utter_out_of_scope
   
+- story: testing_story
+  steps:
+  - intent: testing_qna
+  - action: utter_testing
+  
+- story: immunity_booster_story
+  steps:
+  - intent: immunity_booster
+  - action: utter_immunity_booster
+  - intent: immunity_booster_foods
+  - action: utter_immunity_booster_foods 
+  
+- story: corona community spread path
+  steps:
+  - intent: corona_community
+  - action: utter_corona_community
+  - intent: corona_infected_person
+  - action: utter_corona_infected_person
+  - intent: Thanks
+  - action: utter_Thanks
