@@ -6,63 +6,268 @@ intents:
   - affirm
   - deny
   - basic_info
-  - state_wise
   - bot_challenge
   - age_risk
   - time
   - symptoms
+  - precautions
+  - spread_air
+  - treatment_at_home
+  - spreading_of_covid
+  - vitamins
+  - about_sanitizer
+  - about_mask
+  - about_vaccine
+  - state_wise_cases
   - state_wise_doses
-  
+  - children_mask_info
+  - 5year_or_less_age_children_mask_condition 
+  - children_health_condition
+  - children_mask_type
+  - children_mask_at_home
+  - children_mask_when_playing
+  - children_mask_alternative
+  - out_of_scope
+  - testing_qna
+  - immunity_booster
+  - immunity_booster_foods
+  - corona_community
+  - corona_infected_person
+  - Thanks
+
+
 actions:
   - action_corona_cases
-  - utter_basic_info
-  - utter_symptoms
   - action_vaccine_done
-  
+  - utter_greet
+  - utter_age_risk
+  - utter_basic_info
+  - utter_goodbye
+  - utter_iamabot
+  - utter_spread_air
+  - utter_symptoms
+  - utter_time
+  - utter_precautions
+  - utter_treatment_at_home
+  - utter_spreading_of_covid
+  - utter_vitamins
+  - utter_sanitizer
+  - utter_about_mask
+  - utter_about_vaccine
+  - utter_children_mask_condition
+  - utter_5year_or_less_age_children_mask_condition
+  - utter_children_health_condition
+  - utter_children_mask_type
+  - utter_children_mask_at_home
+  - utter_children_mask_when_playing
+  - utter_children_mask_alternative
+  - utter_out_of_scope
+  - utter_testing
+  - utter_immunity_booster
+  - utter_immunity_booster_foods
+  - utter_corona_community
+  - utter_corona_infected_person
+  - utter_Thanks
+
 entities:
   - state
   - dose
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hey! Covid-19 Chatbot at your service. How can I help you ?"
 
   utter_goodbye:
   - text: "Thanks for using bot"
-  
+
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
 
   utter_basic_info:
-  - text: "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.\n\nWHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China."
+  - text: "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.\n\nWHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China./n/nIt is a kind of virus that causes an infection in your nose, sinuses, or upper throat. The most recently discovered coronavirus causes coronavirus disease COVID-19."
 
   utter_age_risk:
   - text: "People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.\n\nHowever, anyone can get sick with COVID-19 and become seriously ill or die at any age."
-    
+
   utter_time:
   - text: "The time from exposure to COVID-19 to the moment when symptoms begin is,\n\non average, 5-6 days and can range from 1-14 days.\n\nThis is why people who have been exposed to the virus are advised to remain \n\nat home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available."
-    
+
   utter_symptoms:
   - text: |
-     The most common symptoms of COVID-19 are
+      The most common symptoms of COVID-19 are
 
-     1. Fever
-     2. Dry cough
-     3. Fatigue
-     Other symptoms that are less common and may affect some patients include
+      1. Fever
+      2. Dry cough
+      3. Fatigue
+      
+      Other symptoms that are less common and may affect some patients include
 
-     1. Loss of taste or smell,
-     2. Nasal congestion,
-     3. Conjunctivitis (also known as red eyes)
-     4. Sore throat,
-     5. Headache,
-     6. Muscle or joint pain,
-     7. Different types of skin rash,
-     8. Nausea or vomiting,
-     9. Diarrhea,
-     10. Chills or dizziness.
-    
-       
+      1. Loss of taste or smell
+      2. Nasal congestion
+      3. Conjunctivitis (also known as red eyes)
+      4. Sore throat
+      5. Headache
+      6. Muscle or joint pain
+      7. Different types of skin rash
+      8. Nausea or vomiting
+      9. Diarrhea
+      10. Chills or dizziness.
+
+  utter_spread_air:
+  - text: |
+       Airbrone transmission of the novel corona virus is highly virulent, 
+       and could be the dominant route for the spread of COVID-19.
+
+  utter_precautions:
+  - text: |
+      
+       1. Clean your hands often. Use soap and water, or an alcohol-based hand rub sanitix=zer.
+       2. Maintain a safe distance from anyone.
+       3. Wear a mask when you go outside.
+       4. Do not touch your eyes, nose or mouth without senitizing hand.
+       5. Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+       6. Stay home if you feel unwell.
+       7. If you have a fever, cough and difficulty in breathing, seek medical attention.
+
+  utter_treatment_at_home:
+  - text: |
+     "If you have mild covid symstoms please follow this steps :
+      1. Isolate yourself in a well ventilated room.
+      2. Use a triple layer medical mask, discard mask after 8 hours of use or earlier if they become wet or visibly soiled. In the event of a caregiver entering the room, both caregiver and patient may consider using N 95 mask.
+      3. Take rest and drink a lot of fluids to maintain adequate hydration.
+      4. Follow respiratory etiquettes at all times.
+      5. Frequent hand washing with soap and water for at least 40 seconds or clean with alcohol-based sanitizer.
+      6. Don’t share personal items with other people in the household.
+      7. Ensure cleaning of surfaces in the room that are touched often (tabletops, doorknobs, handles, etc.) with 1% hypochlorite solution.
+      8. Monitor temperature daily.
+      9. Monitor oxygen saturation with a pulse oximeter daily.
+      10. Connect with the treating physician promptly if any deterioration of symptoms is noticed.
+      
+      If symtoms appear serious please consult with doctors and visit near hospitals"
+
+  utter_spreading_of_covid:
+  - text: |
+      The coronavirus spreads from person to person through respiratory droplets tiny drops of mucus that spray into the air when we cough or sneeze.
+      A cough or sneeze can also send the virus up to 6 feet away.
+      That’s why we recommend keeping at least 6 feet between you and anyone else and always wear a mask in public to decrease the risk of spread.
+
+  utter_vitamins:
+  - text: |
+      A balanced diet that includes vitamin A, B, C, D, E, and K, and micronutrients such as sodium, zinc, potassium, chloride, calcium, and phosphorus may help maintain general wellbeing and strengthen the immune system, thus decreasing infections.
+      A deficiency of vitamins and minerals in the plasma leads to sub-par performance of the immune system, leading to a poor immune state.
+
+  utter_sanitizer:
+  - text: |
+      Hand sanitizers can  protect against disease-causing microbes, especially in situations when soap and water are not available.
+      They’re also proven to be effective in reducing the number and type of microbes. Usage of sanitizer is suggestable.
+      It is advisable to use alcohol based sanitizer."
+
+  utter_about_mask:
+  - text: |
+      Everyone 2 years or older who is not fully vaccinated should wear a mask in indoor public places.
+      Wearing a mask over your nose and mouth is required.
+      Consider wearing a mask in crowded outdoor settings and for activities with close contact with others.
+
+  utter_about_vaccine:
+  - text: |
+     "Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization (CDSCO) in India.
+      Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India) and Covaxin® (manufactured by Bharat Biotech Limited)."
+
+  utter_children_mask_condition:
+  - text: |
+      Children aged 5 years and under should not be required to wear masks. 
+      This is based on the safety and overall interest of the child and the capacity to appropriately use a mask with minimal assistance.
+      WHO and UNICEF advise that the decision to use masks for children aged 6-11 should be based on the following factors -
+      
+      1. Whether there is widespread transmission in the area where the child resides
+      2. The ability of the child to safely and appropriately use a mask
+      3. Access to masks, as well as laundering and replacement of masks in certain settings (such as schools and childcare services)
+      4. Adequate adult supervision and instructions to the child on how to put on, take off and safely wear masks
+      5. Potential impact of wearing a mask on learning and psychosocial development, in consultation with teachers, parents/caregivers and/or medical providers
+      6. Specific settings and interactions the child has with other people who are at high risk of developing serious illness, such as the elderly and those with other underlying health conditions
+      
+      WHO and UNICEF advise that children aged 12 and over should wear a mask under the same conditions as adults, in particular when they cannot guarantee at least a 1-metre distance from others and there is widespread transmission in the area.
+
+  utter_5year_or_less_age_children_mask_condition:
+  - text: |
+      In general, children aged 5 years and under should not be required to wear masks.
+      This advice is based on the safety and overall interest of the child and the capacity to appropriately use a mask with minimal assistance.
+      There may be local requirements for children aged 5 years and under to wear masks, or specific needs in some settings, such as being physically close to someone who is ill. 
+      In these circumstances, if the child wears a mask, a parent or other guardian should be within direct line of sight to supervise the safe use of the mask.
+
+  utter_children_health_condition:
+  - text: |
+     "Children with underlying health conditions such as cystic fibrosis or cancer should wear a medical mask in consultation with their medical providers. A medical mask provides protection to the person wearing the mask and prevents transmission to others. It is recommended for anyone who has underlying health conditions that put them at greater risk of serious illness."
+  
+  utter_children_mask_type:
+  - text: |
+      Children who are in general good health can wear a non-medical or fabric mask. 
+      This provides source control, meaning it keeps the virus from being transmitted to others if they are infected and are not aware that they are infected. 
+      The adult who is providing the mask should ensure the fabric mask is the correct size and sufficiently covers the nose, mouth and chin of the child. 
+      Children with underlying health conditions such as cystic fibrosis, cancer or immunosuppression, should, in consultation with their medical providers, wear a medical mask. 
+      A medical mask controls spreading of the virus and protection to the wearer, and is recommended for anyone who is at higher risk of getting seriously ill from COVID-19.
+
+  utter_children_mask_at_home:
+  - text: |
+      Any child who has symptoms suggestive of COVID-19 should wear a medical mask, as long as they can tolerate it. 
+      The child should be isolated, and medical advice sought as soon as they start to feel unwell, even if symptoms are mild. 
+      Family members/caregivers who come within 1 metre of the sick child at home should also wear a mask. 
+      A household member who is sick or has tested positive with the virus that causes COVID-19 should be isolated from everyone else if possible. 
+      If the child comes within 1 metre of the sick person at home, the adult and child should wear a medical mask during that time.
+
+  utter_children_mask_when_playing:
+  - text: |
+      Children should not wear a mask when playing sports or doing physical activities, such as running, jumping or playing on the playground, so that it doesn’t compromise their breathing. 
+      When organizing these activities for children, it is important to encourage all other critical public health measures, maintaining at least a 1-metre distance from others, limiting the number of children playing together, providing access to hand hygiene facilities and encouraging their use.
+
+  utter_children_mask_alternative:
+  - text: |
+      In the context of COVID-19, some children may not be able to wear a mask due to disabilities or specific situations such as speech classes where the teacher needs to see their mouths. 
+      In these cases, face shields may be considered an alternative to masks, but they do not provide the equivalent protection in keeping the virus from being transmitted to others. 
+      If a decision is made to use a face shield, it should cover the entire face, wrap around the sides of the face and extend to below the chin. 
+      Caution should be taken while wearing one to avoid injuries that could break it and harm the eyes or face.
+
+  utter_out_of_scope:
+  - text: "I wish I could answer your question, Please ask some other question please."
+  - text: "Sorry I don't know the answer, can you please ask questions related to COVID-19?"
+  
+  utter_testing:
+  - text: "Covid-19 testing can identify the SARS-CoV-2 virus (virus responsible for COVID-19) and includes methods that detect the presence of virus itself (RT-PCR and isothermal nucleic acid amplification) and those that detect antibodies produced in response to infection"
+  - text: "COVID-19 testing differs by location. If you have symptoms of COVID-19 and want to get tested, call your medical provider first. You can also visit your state or health department’s website to look for the latest local information on testing. While supplies of these tests are increasing, it may still be difficult to find a place to get tested."
+
+  utter_immunity_booster: 
+  - text: |
+      Covid – 19 or Coronavirus was declared as a global pandemic by the World Health Organization.
+      Some important measure to follow to improve your immunity are -
+      1. Maintain a healthy diet
+      2. Don't Compromise on Sleep 
+      3. Stay Hydrated
+      4. Not to Skip on Exercise 
+      5. Destress Yourself, Avoid Smoking, alcohol and other addictive substances.
+
+  utter_immunity_booster_foods:
+  - text: |
+      > Eat low carb diets, as this will help control high blood sugar and pressure. 
+      > A low carb diet will help slow down diabetes and focus on a protein-rich diet to keep you in good shape. 
+      > Regularly consume vegetables and fruits rich in Beta carotene, Ascorbic acid & other essential vitamins. 
+      > Certain foods like mushrooms, tomato, bell pepper and green vegetables like broccoli, spinach are also good options to build resilience in the body against infections. 
+      
+      > You can also eat supplements rich in omega 3 & 6 fatty acids for your daily dose.
+       There are several herbs that help in boosting immunity like garlic, Basel leaves and Black cumin. 
+      > Certain seeds and nuts like sunflower seeds, Flax seed, pumpkin seeds and melon seeds are excellent sources of protein and vitamin E. 
+      > Probiotics like Yoghurt, Yakult and fermented food are also excellent sources to rejuvenate the composition of gut bacteria, which is important for nutrient absorption by the body.  
+      > Increase the intake of Turmeric, Cumin, Coriander and garlic. Drink herbal tea or decoction of Holy basil, Cinnamon, Black pepper, Dry Ginger and Raisin. 
+      > Avoid sugar and replace it with jaggery if needed.
+
+  utter_corona_community:
+  - text: "Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected. Each health department determines community spread differently based on local conditions. For information on community spread in your area, please visit your health department’s website.​"
+
+  utter_corona_infected_person:
+  - text: "Stay home for 14 days after your last contact with a person who has COVID-19.\nBe alert for symptoms. Watch for fever, cough, shortness of breath, or other symptoms of COVID-19.\nIf possible, stay away from others, especially people who are at higher risk for getting very sick from COVID-19."
+
+  utter_Thanks:
+  - text: "Your Welcome . Glad I could be of some help!\nJust type 'hey' or 'hi' again to redirect to the main phase of bot :-)"
+
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
