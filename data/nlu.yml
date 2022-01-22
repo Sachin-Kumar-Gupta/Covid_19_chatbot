@@ -66,34 +66,405 @@ nlu:
     - symptoms of covid 19
     - syms
     - Symptoms of corona virus
-    
+    - what are symptoms of coronavirus
+    - covid symptoms
+    - what are the signs of covid19
+    - signs of covid
+
+- intent: precautions
+  examples: |
+    - precautions
+    - protection
+    - prevention
+    - how to prevent corona
+    - how to prevent covid19
+    - precautions for covid
+    - precaution for corona
+    - corona precautions
+    - preventive measures against covid
+    - protective measures
+    - what can I do to protect myself and prevent the spread of corona
+    - what can I do to protect myself and prevent the spread of covid19
+    - measures to be followed to prevent covid19
+    - measures to be taken to avoid covid
+    - protective measures of corona
+    - protective measures of covid19
+    - preventive measures of covid19
+
+- intent: spread_air
+  examples: |
+    - spread through air
+    - corona in air
+    - covid from air
+    - is corona  transmits through air
+    - can virus that causes COVID-19 be transmitted through the air
+    - can corona be transmitted through air
+    - is it possible that corona is spreading through air
+    - is it possible that covid19 is spreading through air
+
+
 - intent: age_risk
   examples: |
     - who is at most risk
     - what age peoples are more at risk
-    
+    - are adult in risk of covid19
+    - risk of old people  sickness because of COVID-19
+
 - intent: time
   examples: |
     - how long it takes to develope symptoms
     - time to see effect of corona virus
-    
-- intent: state_wise
+
+- intent: treatment_at_home
+  examples: |
+    - home remedies
+    - home remedies to cure covid
+    - how can I treat corona at home
+    - can I treat corona at home
+    - what remedies should I follow to treat corona by myself
+    - treat corona at house
+    - treat corona at home
+    - home treatment for corona
+    - home treatment for covid
+    - treatment at home to cure covid
+
+- intent: spreading_of_covid
+  examples: |
+    - spred of corona virus
+    - spread of covid-19
+    - spread of covid
+    - how does the virus spread?
+    - will warm weather stop the outbreak of COVID-19?
+    - community spread
+    - Spreadind of virus
+    - Spreading of corona virus
+    - spread corona
+    - spread covid
+    - Transmission of virus
+    - can mosquitoes or ticks spread the virus that causes COVID-19?
+
+- intent: vitamins
+  examples: |
+    - which vitamins are useful to avoid covid
+    - vitamin C helpful for avoiding corona
+    - can Vitamins and Minerals Help Fight Coronavirus?
+    - can Vitamin C Prevent and Treat Coronavirus?
+    - Vitamins C, D can help prevent coronavirus
+    - Can Vitamin C protect from COVID-19?
+
+- intent: about_sanitizer
+  examples: |
+    - which type of sanitizer can be used
+    - how many percentage of alcohol should the sanitizer contain
+    - sanitize hands
+    - sanitizer
+    - what type of liquids to be used to kill coronavirus
+    - what type of liquids to be used to kill covid19
+    - what type of liquids to be used to remove covid19
+    - what precautions can be taken to clean hands
+    - is sanitizer useful
+    - will sanitizer removes bacteria
+    - does sanitizing helps to kills virus
+    - how much alcohol percent should be present in the sanitizer
+
+- intent: about_mask
+  examples: |
+    - wearing a mask
+    - are mask necessary
+    - about mask
+    - mask
+    - is wearing mask useful
+    - why masks are required
+    - is mask really necessary to avoid infecting from corona
+    - is mask necessary to avoid infecting from covid19
+    - masks are useful or not
+
+- intent: about_vaccine
+  examples: |
+    - vaccines for corona
+    - are there any drugs vaccine for covid19
+    - what is the vaccine for corona
+    - vaccine
+    - about vaccine
+    - medicine to cure covid
+    - what about vaccine of covid19
+    - what about vaccine of corona virus
+    - what about medicine of covid
+    - what about medicine of corona
+    - is any vaccine invented for covid
+    - is there any medicine discovered for corona
+    - is there any medicine discovered for covid19
+    - is corona can be cured
+    - is covid cureable
+    - cure of corona
+    - cure of covid
+    - cure covid-19
+
+- intent: children_mask_info
+  examples: |
+    - Should children wear a mask?
+    - Children aged 5 years and under should be required to wear masks?
+    - what minimum age should required to wear mask?
+    - what are the factors for deciding to use mask for children age 6-11?
+
+
+- intent: children_mask_at_home
+  examples: |
+    - Should a child wear a mask at home?
+    - children having covid-19 symptoms should he or she need to wear mask at home?
+    - what should have to take precautions at home if kid having symptoms?
+    - if anyone have covid-19 symptoms then does it required to wear mask for our child?
+    - If kid or any other adult have covid-19 symptoms how much distance should we have to take?
+
+- intent: children_mask_type
+  examples: |
+    - What type of mask should children wear?
+    - Children who are in general good health can he/she wear a non-medical or fabric mask?
+    - what are the guidlined to wear mask for children?
+
+- intent: children_health_condition
+  examples: |
+    - Should children who have health issues or a medical condition that compromises their immune system wear a mask?
+    - it is compulsary for sick kid to wear a mask?
+    - if children have health issue should she/he has to wear mask?
+    - wearing mask could affects the already sick kid?
+
+
+- intent: 5year_or_less_age_children_mask_condition
+  examples: |
+    - Are there situations where children aged 5 years and under may wear mask? 
+    - children aged 5 years and under may required to wear a mask?
+    - What are the guidlines for age 5 year and less than 5 year kids?
+    - what are those precations have to take for 5 year old and less than 5 year old child?
+
+- intent: children_mask_when_playing
+  examples: |
+    - Should children wear a mask when playing sports or doing physical activities?
+    - should children go out from home for playing?
+
+- intent: children_mask_alternative
+  examples: |
+    - Are there alternatives to fabric masks such as face shields?
+    - what are those other ways to cover children face or mouth and nose?
+    - what are those specific guidelines needs to follows for cover or alternative of mask?
+    - for alternative of mask what caution should be taken while wearing alternative for mask?
+
+
+- intent: out_of_scope
+  examples: |
+    - please help with my ice cream it's dripping
+    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
+    - i want a non dripping ice cream
+    - someone call the police i think the bot died
+    - show me a picture of a chicken
+    - neither
+    - I want french cuisine
+    - i am hungry
+    - restaurant
+    - can i be shown a gluten free restaurant
+    - i don't care!!!!
+    - i do not care how are you
+    - again?
+    - oh wait i gave you my work email address can i change it?
+    - hang on let me find it
+    - stop it, i do not care!!!
+    - how come?
+    - I changed my mind
+    - what?
+    - did i broked you
+    - that link doesn't work!
+    - you already have that
+    - this is a really frustrating experience
+    - no stop
+    - give me food
+    - i want food
+    - Can I ask you questions first?
+    - is it a wasteland full of broken robot parts?
+    - can we keep chatting?
+    - talk to me
+    - who is your favourite robot?
+    - can you help me to build a bot
+    - a wood chuck can't chuck any kind of wood
+    - a wood chuck can't chuck wood
+    - are you wearing anything?
+    - can i arrange a taxi?
+    - can i book a taxi?
+    - can i order a pizza?
+    - give quiche a chance
+    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
+    - i am heavy weapons guy and this is my weapon
+    - i know kung-fu
+    - i need a taxi
+    - i want a pepperoni pizza
+    - i want to order a pizza
+    - i'd like a pizza please
+    - i'm all out of bubblegum
+    - i'm asking you to marry me
+    - it's an albany expression
+    - marry me
+    - now i have a machine gun ho-ho-ho!
+    - please marry me
+    - tell me what you're wearing?
+    - trial by stone!
+    - what are you wearing?
+    - will you marry me?
+    - you come to me on the day of my daughter's wedding
+    - you don't win friends with salad
+    - you're going to need a bigger boat
+    - oh my god
+
+
+- intent: testing_qna
+  examples: |
+     - are tests available?
+     - are there tests to detect corona?
+     - can i have a test even if i don't have symptoms?
+     - can i have a test if i think i have coronavirus?
+     - can i have a test?
+     - how are they testing people for covid19?
+     - how can i get tested?
+     - how do they test for covid-19?
+     - how do they test someone for covid-19?
+     - how does testing for corona work?
+     - how does testing work?
+     - i think i have coronavirus, should i get a test?
+     - i think i've got it, should i get a test?
+     - is there any testing going on?
+     - when should i get a test?
+     - when will testing be available?
+     - where are test available?
+     - who are they testing for corona virus right now?
+     - who can get tested?
+
+- intent: immunity_booster
+  examples: |
+     - what should i do to boost my immunity?
+     - what are the methods to boost immunity?
+     - how to boost my immunity?
+     - how to minimize the risk of infection?
+
+
+- intent: immunity_booster_foods
+  examples: |
+     - what all food should i eat to increase my immunty?
+     - what all Supplements and immunity boosting foods should i eat?
+     - how to improve my diet against covid 19?
+     - what should i eat when i got covid 19?
+     - what all foods should i eat to prevent covid 19?
+
+- intent: corona_community
+  examples: |
+    - what is community spread?
+    - how does community spread occurs?
+    - community spread
+
+
+- intent: corona_infected_person
+  examples: |
+    - If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19
+    - If You or Someone You Know is Sick or Had Contact with Someone who Has corona?
+    - what should i do if someone in my house gets infected by corona?
+    - what should i do if someone in my house gets infected by covid-19?
+    - someone gets covid-19 i know?
+    - my family member gets infected by corona?
+    - someone gets infected by corona i know?
+    - someone gets infected by corona i was in contact with?
+    - someone gets infected by covid i was in contact with?
+    - what to do if someone gets infected by covid i was in contact with?
+
+
+- intent: Thanks
+  examples: |
+    - Thanks
+    - Thank You
+    - thanks
+    - thanks a lot 
+    - thank you so much
+
+- intent: state_wise_cases
   examples: |
     - corona cases in [India](state)
     - cases of corona in [Maharastra](state)
-    - covid cases in [Karnatak](state)
-    - [West Bengal](state)
-    - [Uttar Pradesh](state)
-    - [Delhi](state)
+    - covid cases in [Karnataka](state)
+    - cases of covid in [West Bengal](state)
+    - cases in [Uttar Pradesh](state)
+    - active cases of covid in [Delhi](state)
+    - active case of corona in [A & N Islands](state)
+    - active case in [Andhra Pradesh](state)
+    - number of active case in [Arunachal Pradesh](state)
+    - active corona cases in [Assam](state)
+    - [Bihar](state) corona cases status
+    - [Chandigarh](state) active corona cases
+    - [Chhattisgarh](state) cases
+    - [Dadra & Nagar](state)
+    - [Daman & Diu](state)
+    - [Goa](state)
+    - [Gujarat](state)
+    - [Haryana](state)
+    - [Himachal Pradesh](state)
+    - [Jammu & Kashmir](state)
+    - [Jharkhand](state)
+    - [Karnataka](state)
+    - [Kerala](state)
+    - [Ladakh](state)
+    - [Lakshadweep](state)
+    - [Madhya Pradesh](state)
+    - [Maharashtra](state)
+    - [Manipur](state)
+    - [Meghalaya](state)
+    - [Mizoram](state)
+    - [Nagaland](state)
+    - [Odisha](state)
+    - [Puducherry](state)
+    - [Punjab](state)
+    - [Rajasthan](state)
+    - [Sikkim](state)
+    - [Tamil Nadu](state)
+    - [Telangana](state)
+    - [Tripura](state)
+    - [Uttarakhand](state)
 
 - intent: state_wise_doses
   examples: |
     - vacination done in [India](dose)
     - vaccine doses given in [Maharastra](dose)
-    - vaccinnations in [Karnatak](dose)
+    - vaccinnation in [Karnataka](dose)
     - [West Bengal](dose)
     - [Uttar Pradesh](dose)
-    - [Delhi](dose)
+    - doses in [Delhi](dose)
+    - vaccination in [A & N Islands](dose)
+    - vaccination done in [Andhra Pradesh](dose)
+    - doses in [Arunachal Pradesh](dose)
+    - doses in [Assam](dose)
+    - doses in [Bihar](dose)
+    - doses in [Chandigarh](dose)
+    - doses in [Chhattisgarh](dose)
+    - doses in [Dadra & Nagar](dose)
+    - doses in [Daman & Diu](dose)
+    - doses in [Goa](dose)
+    - doses in [Gujarat](dose)
+    - doses in [Haryana](dose)
+    - doses in [Himachal Pradesh](dose)
+    - doses in [Jammu & Kashmir](dose)
+    - doses in [Jharkhand](dose)
+    - doses in [Kerala](dose)
+    - doses in [Ladakh](dose)
+    - doses in [Lakshadweep](dose)
+    - doses in [Madhya Pradesh](dose)
+    - doses in [Manipur](dose)
+    - doses in [Meghalaya](dose)
+    - doses in [Mizoram](dose)
+    - doses in [Nagaland](dose)
+    - doses in [Odisha](dose)
+    - doses in [Puducherry](dose)
+    - doses in [Punjab](dose)
+    - vaccination in [Rajasthan](dose)
+    - vaccination in [Sikkim](dose)
+    - vaccination in [Tamil Nadu](dose)
+    - vaccination in [Telangana](dose)
+    - vaccination in [Tripura](dose)
+    - vaccination in [Uttarakhand](dose)
+
 
 - intent: children_mask_info
   examples: |
