@@ -48,7 +48,6 @@ nlu:
     - no way
     - not really
 
-
 - intent: basic_info
   examples: |
     - about covid19
@@ -66,10 +65,12 @@ nlu:
     - symptoms of covid 19
     - syms
     - Symptoms of corona virus
-    - what are symptoms of coronavirus
+    - what are the symptoms of coronavirus
     - covid symptoms
     - what are the signs of covid19
     - signs of covid
+    - do i have corona virus
+    - am i affected with corona virus
 
 - intent: precautions
   examples: |
@@ -102,13 +103,13 @@ nlu:
     - is it possible that corona is spreading through air
     - is it possible that covid19 is spreading through air
 
-
 - intent: age_risk
   examples: |
     - who is at most risk
     - what age peoples are more at risk
     - are adult in risk of covid19
     - risk of old people  sickness because of COVID-19
+    - which age group peoples are at risk from covid ?
 
 - intent: time
   examples: |
@@ -172,7 +173,7 @@ nlu:
     - wearing a mask
     - are mask necessary
     - about mask
-    - mask
+    - how to wear mask
     - is wearing mask useful
     - why masks are required
     - is mask really necessary to avoid infecting from corona
@@ -207,7 +208,6 @@ nlu:
     - what minimum age should required to wear mask?
     - what are the factors for deciding to use mask for children age 6-11?
 
-
 - intent: children_mask_at_home
   examples: |
     - Should a child wear a mask at home?
@@ -229,7 +229,6 @@ nlu:
     - if children have health issue should she/he has to wear mask?
     - wearing mask could affects the already sick kid?
 
-
 - intent: 5year_or_less_age_children_mask_condition
   examples: |
     - Are there situations where children aged 5 years and under may wear mask? 
@@ -249,15 +248,19 @@ nlu:
     - what are those specific guidelines needs to follows for cover or alternative of mask?
     - for alternative of mask what caution should be taken while wearing alternative for mask?
 
+- intent: medicines
+  example: |
+    - medicines recommended to cure in corona virus
+    - medicines for covid 19
+    - drugs recommended to treat covid19
+    - medicines
 
 - intent: out_of_scope
   examples: |
     - please help with my ice cream it's dripping
-    - no wait go back i want a dripping ice cream but a cone that catches it so you can drink the ice cream later
-    - i want a non dripping ice cream
+    - no wait go back i want a dripping
     - someone call the police i think the bot died
     - show me a picture of a chicken
-    - neither
     - I want french cuisine
     - i am hungry
     - restaurant
@@ -267,52 +270,20 @@ nlu:
     - again?
     - oh wait i gave you my work email address can i change it?
     - hang on let me find it
-    - stop it, i do not care!!!
-    - how come?
     - I changed my mind
-    - what?
-    - did i broked you
-    - that link doesn't work!
-    - you already have that
     - this is a really frustrating experience
     - no stop
     - give me food
-    - i want food
-    - Can I ask you questions first?
-    - is it a wasteland full of broken robot parts?
     - can we keep chatting?
     - talk to me
     - who is your favourite robot?
     - can you help me to build a bot
-    - a wood chuck can't chuck any kind of wood
-    - a wood chuck can't chuck wood
-    - are you wearing anything?
-    - can i arrange a taxi?
     - can i book a taxi?
     - can i order a pizza?
-    - give quiche a chance
-    - how much wood could a wood chuck chuck if a wood chuck would chuck wood?
-    - i am heavy weapons guy and this is my weapon
-    - i know kung-fu
     - i need a taxi
     - i want a pepperoni pizza
     - i want to order a pizza
     - i'd like a pizza please
-    - i'm all out of bubblegum
-    - i'm asking you to marry me
-    - it's an albany expression
-    - marry me
-    - now i have a machine gun ho-ho-ho!
-    - please marry me
-    - tell me what you're wearing?
-    - trial by stone!
-    - what are you wearing?
-    - will you marry me?
-    - you come to me on the day of my daughter's wedding
-    - you don't win friends with salad
-    - you're going to need a bigger boat
-    - oh my god
-
 
 - intent: testing_qna
   examples: |
@@ -343,7 +314,6 @@ nlu:
      - how to boost my immunity?
      - how to minimize the risk of infection?
 
-
 - intent: immunity_booster_foods
   examples: |
      - what all food should i eat to increase my immunty?
@@ -351,6 +321,7 @@ nlu:
      - how to improve my diet against covid 19?
      - what should i eat when i got covid 19?
      - what all foods should i eat to prevent covid 19?
+     - immunity booster foods
 
 - intent: corona_community
   examples: |
@@ -361,11 +332,9 @@ nlu:
 
 - intent: corona_infected_person
   examples: |
-    - If You or Someone You Know is Sick or Had Contact with Someone who Has COVID-19
-    - If You or Someone You Know is Sick or Had Contact with Someone who Has corona?
     - what should i do if someone in my house gets infected by corona?
     - what should i do if someone in my house gets infected by covid-19?
-    - someone gets covid-19 i know?
+    - what to do when someone gets covid-19 i know?
     - my family member gets infected by corona?
     - someone gets infected by corona i know?
     - someone gets infected by corona i was in contact with?
@@ -383,9 +352,9 @@ nlu:
 
 - intent: state_wise_cases
   examples: |
-    - corona cases in [India](state)
+    - totoal corona cases in [India](state)
     - cases of corona in [Maharastra](state)
-    - covid cases in [Karnataka](state)
+    - total covid cases in [Karnataka](state)
     - cases of covid in [West Bengal](state)
     - cases in [Uttar Pradesh](state)
     - active cases of covid in [Delhi](state)
@@ -429,8 +398,8 @@ nlu:
     - vacination done in [India](dose)
     - vaccine doses given in [Maharastra](dose)
     - vaccinnation in [Karnataka](dose)
-    - [West Bengal](dose)
-    - [Uttar Pradesh](dose)
+    - [West Bengal](dose) doses
+    - vaccination done in [Uttar Pradesh](dose)
     - doses in [Delhi](dose)
     - vaccination in [A & N Islands](dose)
     - vaccination done in [Andhra Pradesh](dose)
@@ -464,7 +433,6 @@ nlu:
     - vaccination in [Telangana](dose)
     - vaccination in [Tripura](dose)
     - vaccination in [Uttarakhand](dose)
-
 
 - intent: bot_challenge
   examples: |

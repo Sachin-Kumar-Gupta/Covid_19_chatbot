@@ -37,7 +37,7 @@ stories:
 - story: spreading of covid
   steps:
   - intent: spread_air
-  - action: utter_spread_air
+  - action: utter_spreading_of_covid
   - intent: spreading_of_covid
   - action: utter_spreading_of_covid
 
@@ -79,10 +79,12 @@ stories:
   - intent: 5year_or_less_age_children_mask_condition
   - action: utter_5year_or_less_age_children_mask_condition
 
-- story: children health condition 
+- story: children health condition and medicines
   steps: 
   - intent: children_health_condition
   - action: utter_children_health_condition
+  - intent: medicines
+  - action: utter_medicines
 
 - story: about children mask 
   steps: 
