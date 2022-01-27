@@ -27,6 +27,7 @@ intents:
   - children_mask_at_home
   - children_mask_when_playing
   - children_mask_alternative
+  - medicines
   - out_of_scope
   - testing_qna
   - immunity_booster
@@ -61,6 +62,7 @@ actions:
   - utter_children_mask_at_home
   - utter_children_mask_when_playing
   - utter_children_mask_alternative
+  - utter_medicines
   - utter_out_of_scope
   - utter_testing
   - utter_immunity_booster
@@ -84,13 +86,13 @@ responses:
   - text: "I am a bot, powered by Rasa."
 
   utter_basic_info:
-  - text: "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.\n\nWHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China./n/nIt is a kind of virus that causes an infection in your nose, sinuses, or upper throat. The most recently discovered coronavirus causes coronavirus disease COVID-19."
+  - text: "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.\n WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China./nIt is a kind of virus that causes an infection in your nose, sinuses, or upper throat. The most recently discovered coronavirus causes coronavirus disease COVID-19."
 
   utter_age_risk:
-  - text: "People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.\n\nHowever, anyone can get sick with COVID-19 and become seriously ill or die at any age."
+  - text: "People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.\n However, anyone can get sick with COVID-19 and become seriously ill or die at any age."
 
   utter_time:
-  - text: "The time from exposure to COVID-19 to the moment when symptoms begin is,\n\non average, 5-6 days and can range from 1-14 days.\n\nThis is why people who have been exposed to the virus are advised to remain \n\nat home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available."
+  - text: "The time from exposure to COVID-19 to the moment when symptoms begin is,\n on average, 5-6 days and can range from 1-14 days.\n This is why people who have been exposed to the virus are advised to remain \n at home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available."
 
   utter_symptoms:
   - text: |
@@ -112,11 +114,8 @@ responses:
       8. Nausea or vomiting
       9. Diarrhea
       10. Chills or dizziness.
-
-  utter_spread_air:
-  - text: |
-       Airbrone transmission of the novel corona virus is highly virulent, 
-       and could be the dominant route for the spread of COVID-19.
+      
+      If you have any mild symptoms please isolate yourself and if it is serious please seek medical help.
 
   utter_precautions:
   - text: |
@@ -148,8 +147,10 @@ responses:
   utter_spreading_of_covid:
   - text: |
       The coronavirus spreads from person to person through respiratory droplets tiny drops of mucus that spray into the air when we cough or sneeze.
+      Its a airbrone transmission of the novel corona virus is highly virulent, 
+      and could be the dominant route for the spread of COVID-19.     
       A cough or sneeze can also send the virus up to 6 feet away.
-      That’s why we recommend keeping at least 6 feet between you and anyone else and always wear a mask in public to decrease the risk of spread.
+      That’s why it is recommend keeping at least 6 feet between you and anyone else and always wear a mask in public to decrease the risk of spread.
 
   utter_vitamins:
   - text: |
@@ -164,14 +165,16 @@ responses:
 
   utter_about_mask:
   - text: |
-      Everyone 2 years or older who is not fully vaccinated should wear a mask in indoor public places.
+      Everyone 2 years or older who is not fully vaccinated should wear a mask in indoor or public places.
       Wearing a mask over your nose and mouth is required.
       Consider wearing a mask in crowded outdoor settings and for activities with close contact with others.
+      Wearning a mask reduces the chances to spread corona virus.
 
   utter_about_vaccine:
   - text: |
-     "Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization (CDSCO) in India.
-      Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India) and Covaxin® (manufactured by Bharat Biotech Limited)."
+      Two vaccines were granted emergency use authorization by the Central Drugs Standard Control Organization (CDSCO) in India.
+      1. Covishield® (AstraZeneca's vaccine manufactured by Serum Institute of India)
+      2. Covaxin® (manufactured by Bharat Biotech Limited).
 
   utter_children_mask_condition:
   - text: |
@@ -197,7 +200,9 @@ responses:
 
   utter_children_health_condition:
   - text: |
-     "Children with underlying health conditions such as cystic fibrosis or cancer should wear a medical mask in consultation with their medical providers. A medical mask provides protection to the person wearing the mask and prevents transmission to others. It is recommended for anyone who has underlying health conditions that put them at greater risk of serious illness."
+      Children with underlying health conditions such as cystic fibrosis or cancer should wear a medical mask in consultation with their medical providers.
+      A medical mask provides protection to the person wearing the mask and prevents transmission to others. 
+      It is recommended for anyone who has underlying health conditions that put them at greater risk of serious illness.
   
   utter_children_mask_type:
   - text: |
@@ -226,6 +231,21 @@ responses:
       In these cases, face shields may be considered an alternative to masks, but they do not provide the equivalent protection in keeping the virus from being transmitted to others. 
       If a decision is made to use a face shield, it should cover the entire face, wrap around the sides of the face and extend to below the chin. 
       Caution should be taken while wearing one to avoid injuries that could break it and harm the eyes or face.
+
+  utter_medicines:
+  - text: |
+      Treatment for patients with mild/asymptomatic disease in home isolation -
+      1. Patients must be in communication with a treating physician and promptly report in case of any worsening.
+      2. Continue the medications for other co-morbid illness after consulting the treating physician.
+      3. Patients to follow symptomatic management for fever, running nose and cough, as warranted.
+      4. Patients may perform warm water gargles or take steam inhalation twice a day.
+      
+      The U.S. Food and Drug Administration (FDA) approved medicines to treat coronavirus disease 2019 are -
+      1. Remdesivir (Veklury)
+      2. Paxlovid(to treat mild to moderate symptoms )
+      3. Molnupiravir(to treat mild to moderate symptoms)
+      4. Rheumatoid arthritis drug baricitinib (Olumiant)
+      5. Tocilizumab
 
   utter_out_of_scope:
   - text: "I wish I could answer your question, Please ask some other question please."
