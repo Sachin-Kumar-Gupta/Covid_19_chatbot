@@ -27,15 +27,20 @@ class ActionVaccineTracker(Action):
         pdf = 'https://www.mohfw.gov.in/pdf/CummulativeCovidVaccinationReport'+d1+'.pdf'
          
         def vaccine(pdf):
-            df = read_pdf(pdf, area = [208, 51.48,800, 560], multiple_tables=False, pages = "all")[0]
+            df = read_pdf(pdf, area = [208, 68,800, 560], multiple_tables=False, pages = "all")[0]
             df1 = df.copy()
-            df1 = df1.drop(['Unnamed: 0'], axis = 1)
-            df1 = df1.reset_index()
-            df1 = df1.drop(['index'], axis = 1)
             df1.columns = ['State/UT','1st Dose','2nd Dose','Below 18','Precaution Dose','Total Doses']
             return df1
+        
+        def total(pdf):
+            df2 = read_pdf(pdf, area = [114, 161,180, 538], multiple_tables=False, pages = "all")[0]
+            df3 = df2.copy()
+            df3.columns = ['1st Dose','2nd Dose','Below 18','Precaution Dose','Total Doses']
+            df3 = df3.replace({r'\r': ' '}, regex=True)
+            return df3
 
         data = vaccine(pdf)
+        total = total(pdf)
              
         entities = tracker.latest_message['entities']
         #print("Entities is : {}".format(entities))
@@ -58,7 +63,13 @@ class ActionVaccineTracker(Action):
                        '\nFirst Doses (15-18 year) : ' +num[0][3] +
                        '\nPrecaution Doses : ' +num[0][4] + 
                        '\nOverall Total Vaccination done : '+ num[0][5])
-                    
+        '''else:
+            dff = ('Overall first doses : '+total['1st Dose'][0]+total['1st Dose'][1]+
+                   '\nOverall second doses : '+total['2nd Dose'][0]+total['2nd Dose'][1]+
+                   '\nOverall below 18 doses : '+total['Below 18'][0]+total['Below 18'][1]+
+                   '\nOverall precaution doses : '+total['Precaution Dose'][0]+total['Precaution Dose'][1]+
+                   '\nOverall vaccinations : '+total['Total Doses'][0]+total['Total Doses'][1])
+                    '''
         dispatcher.utter_message(text = dff)
 
         return []

@@ -35,7 +35,7 @@ class ActionCoronaTracker(Action):
                      state = i['value']
              cases = "Please check and enter correct detail"
              
-             if state == "India":
+             if state.title() == "India":
                  state = 'Total'
                  
              for i in data['statewise']:
